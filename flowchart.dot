@@ -1,28 +1,30 @@
 digraph G {
-    start[shape=box, style="rounded,filled", fillcolor=limegreen];
+
+    start[shape=box, style="rounded,filled", fillcolor=limegreen, group=g1];
     
-    //{rank = same; fbk; pea; start; sv; sc; array;}
     {rank = same; pea; span; array}
-    pea[shape=diamond, label="Point\nexisting array ?", style=filled, fillcolor=orange]
+    pea[shape=diamond, label="Need to use existing\ncontiguous data ?", style=filled, fillcolor=orange, group=g1]
     
-    //{rank = same; fbk; sbk;}
-    fbk[shape=diamond, label="Find by\nkey ?", style=filled, fillcolor=orange];
+    fbk[shape=diamond, label="Find by\nkey ?", style=filled, fillcolor=orange, group=g1];
     
-    {rank = same; sbk; list;}
-    sbk[shape=diamond, label="Sort by\nkey ?", style=filled, fillcolor=orange];
+    sbk[shape=diamond, label="Sort by\nkey ?", style=filled, fillcolor=orange, group=g1];
     
-    {rank = same; ncs; vector;}
-    ncs[shape=diamond, label="Contiguous\nstorage ?", style=filled, fillcolor=orange];
+    {rank = same; cs; vector; sbk;}
+    cs[shape=diamond, label="Contiguous\nstorage ?", style=filled, fillcolor=orange, group=g2];
     
-    {rank = same; fbk; sv; sc}
-    sv[shape=diamond, label="Size\nvarie ?", style=filled, fillcolor=orange];
+    {rank = same; pp; ieim;}
+    pp[shape=diamond, label="Persistant\nposition ?", style=filled, fillcolor=orange, group=g2];
+    
+    {rank = same; fbk; sv; sc;}
+    sv[shape=diamond, label="Size\nvarie ?", style=filled, fillcolor=orange, group=g2];
     sc[shape=diamond, label="Size is\nconst ?", style=filled, fillcolor=orange];
     
-    {rank = same; ieim; deque;}
-    ieim[shape=diamond, label="Insert/erase\nin the middle ?", style=filled, fillcolor=orange];
+    {rank = same; ieim;}
+    ieim[shape=diamond, label="Insert/erase\nin the middle ?", style=filled, fillcolor=orange, group=g2];
     
+    //{rank = same; ad1; ad2; ieim;}
     ad1[shape=diamond, label="Allow\nduplicate ?", style=filled, fillcolor=orange];
-    ad2[shape=diamond, label="Allow\nduplicate ?", style=filled, fillcolor=orange];
+    ad2[shape=diamond, label="Allow\nduplicate ?", style=filled, fillcolor=orange, group=g1];
     skv11[shape=diamond, label="Separate\nkey/value ?", style=filled, fillcolor=orange];
     skv12[shape=diamond, label="Separate\nkey/value ?", style=filled, fillcolor=orange];
     skv21[shape=diamond, label="Separate\nkey/value ?", style=filled, fillcolor=orange];
@@ -64,11 +66,14 @@ digraph G {
     fbk -> sbk[label="yes"];
     fbk -> sv[label="no"];
     
-    sv -> ncs[label="yes"];
+    sv -> cs[label="yes"];
     sv -> sc[label="no"];
     
-    ncs -> vector[label="yes"];
-    ncs -> ieim[label="no"];
+    cs -> vector[label="yes"];
+    cs -> pp[label="no"];
+    
+    pp -> list[label="yes"];
+    pp -> ieim[label="no"];
     
     ieim -> list[label="yes"];
     ieim -> deque[label="no"];
