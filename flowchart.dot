@@ -1,79 +1,81 @@
 digraph G {
-  start[shape=box, style=rounded];
-
-  {rank = same; fbk; pea; start; sv; sc; array;}
-  pea[shape=diamond, label="Point\nexisting array ?"]
-
-  sbk[shape=diamond, label="Sort by\nkey ?"];
-  fbk[shape=diamond, label="Find by\nkey ?"];
-
-  {rank = same; ncs; vector;}
-  ncs[shape=diamond, label="Need contiguous\nstorage ?"];
-
-  sv[shape=diamond, label="Size\nvarie ?"];
-  sc[shape=diamond, label="Size is\nconst ?"];
-
-  {rank = same; ieim; deque;}
-  ieim[shape=diamond, label="Insert/erase\nin the middle ?"];
-
-  ad1[shape=diamond, label="Allow\nduplicate ?"];
-  ad2[shape=diamond, label="Allow\nduplicate ?"];
-  skv11[shape=diamond, label="Separate\nkey/value ?"];
-  skv12[shape=diamond, label="Separate\nkey/value ?"];
-  skv21[shape=diamond, label="Separate\nkey/value ?"];
-  skv22[shape=diamond, label="Separate\nkey/value ?"];
-
-  ad1 -> skv11[label="yes"];
-  ad1 -> skv12[label="no"];
-  ad2 -> skv21[label="yes"];
-  ad2 -> skv22[label="no"];
-
-  skv11 -> multimap[label="yes"];
-  skv11 -> multiset[label="no"];
-  skv12 -> map[label="yes"];
-  skv12 -> set[label="no"];
-  skv21 -> unordered_multimap[label="yes"];
-  skv21 -> unordered_multiset[label="no"];
-  skv22 -> unordered_map[label="yes"];
-  skv22 -> unordered_set[label="no"];
-
-  vector[shape=box];
-  array[shape=box];
-  list[shape=box];
-  deque[shape=box];
-  span[shape=box];
-  map[shape=box];
-  set[shape=box];
-  multimap[shape=box];
-  multiset[shape=box];
-  unordered_map[shape=box];
-  unordered_set[shape=box];
-  unordered_multimap[shape=box];
-  unordered_multiset[shape=box];
-
-  start -> pea;
-
-  pea -> span[label="yes"];
-  pea -> fbk[label="no"];
-
-  /*oii -> sbk[label="no"];
-  oii -> lifo[label="yes"];*/
-
-  fbk -> sbk[label="yes"];
-  fbk -> sv[label="no"];
-
-  sv -> ncs[label="yes"];
-  sv -> sc[label="no"];
-
-  ncs -> vector[label="yes"];
-  ncs -> ieim[label="no"];
-
-  ieim -> list[label="yes"];
-  ieim -> deque[label="no"];
-
-  sc -> array[label="yes"];
-  sc -> vector[label="no"];
-
-  sbk -> ad1[label="yes"];
-  sbk -> ad2[label="no"];
+    start[shape=box, style=rounded];
+    
+    //{rank = same; fbk; pea; start; sv; sc; array;}
+    {rank = same; pea; span; array}
+    pea[shape=diamond, label="Point\nexisting array ?"]
+    
+    //{rank = same; fbk; sbk;}
+    fbk[shape=diamond, label="Find by\nkey ?"];
+    
+    {rank = same; sbk; list;}
+    sbk[shape=diamond, label="Sort by\nkey ?"];
+    
+    {rank = same; ncs; vector;}
+    ncs[shape=diamond, label="Contiguous\nstorage ?"];
+    
+    {rank = same; fbk; sv; sc}
+    sv[shape=diamond, label="Size\nvarie ?"];
+    sc[shape=diamond, label="Size is\nconst ?"];
+    
+    {rank = same; ieim; deque;}
+    ieim[shape=diamond, label="Insert/erase\nin the middle ?"];
+    
+    ad1[shape=diamond, label="Allow\nduplicate ?"];
+    ad2[shape=diamond, label="Allow\nduplicate ?"];
+    skv11[shape=diamond, label="Separate\nkey/value ?"];
+    skv12[shape=diamond, label="Separate\nkey/value ?"];
+    skv21[shape=diamond, label="Separate\nkey/value ?"];
+    skv22[shape=diamond, label="Separate\nkey/value ?"];
+    
+    ad1 -> skv11[label="yes"];
+    ad1 -> skv12[label="no"];
+    ad2 -> skv21[label="yes"];
+    ad2 -> skv22[label="no"];
+    
+    skv11 -> multimap[label="yes"];
+    skv11 -> multiset[label="no"];
+    skv12 -> map[label="yes"];
+    skv12 -> set[label="no"];
+    skv21 -> unordered_multimap[label="yes"];
+    skv21 -> unordered_multiset[label="no"];
+    skv22 -> unordered_map[label="yes"];
+    skv22 -> unordered_set[label="no"];
+    
+    vector[shape=box];
+    array[shape=box];
+    list[shape=box];
+    deque[shape=box];
+    span[shape=box];
+    map[shape=box];
+    set[shape=box];
+    multimap[shape=box];
+    multiset[shape=box];
+    unordered_map[shape=box];
+    unordered_set[shape=box];
+    unordered_multimap[shape=box];
+    unordered_multiset[shape=box];
+    
+    start -> pea;
+    
+    pea -> span[label="yes"];
+    pea -> fbk[label="no"];
+    
+    fbk -> sbk[label="yes"];
+    fbk -> sv[label="no"];
+    
+    sv -> ncs[label="yes"];
+    sv -> sc[label="no"];
+    
+    ncs -> vector[label="yes"];
+    ncs -> ieim[label="no"];
+    
+    ieim -> list[label="yes"];
+    ieim -> deque[label="no"];
+    
+    sc -> array[label="yes"];
+    sc -> vector[label="no"];
+    
+    sbk -> ad1[label="yes"];
+    sbk -> ad2[label="no"];
 }
