@@ -1,5 +1,5 @@
 digraph G {
-    start[shape=box, style=rounded, style=filled, fillcolor=gray];
+    start[shape=box, style="rounded,filled", fillcolor=gray];
     
     //{rank = same; fbk; pea; start; sv; sc; array;}
     {rank = same; pea; span; array}
