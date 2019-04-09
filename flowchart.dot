@@ -1,32 +1,32 @@
 digraph G {
-    start[shape=box, style="rounded,filled", fillcolor=gray];
+    start[shape=box, style="rounded,filled", fillcolor=limegreen];
     
     //{rank = same; fbk; pea; start; sv; sc; array;}
     {rank = same; pea; span; array}
-    pea[shape=diamond, label="Point\nexisting array ?", style=filled, fillcolor=yellow]
+    pea[shape=diamond, label="Point\nexisting array ?", style=filled, fillcolor=orange]
     
     //{rank = same; fbk; sbk;}
-    fbk[shape=diamond, label="Find by\nkey ?", style=filled, fillcolor=yellow];
+    fbk[shape=diamond, label="Find by\nkey ?", style=filled, fillcolor=orange];
     
     {rank = same; sbk; list;}
-    sbk[shape=diamond, label="Sort by\nkey ?", style=filled, fillcolor=yellow];
+    sbk[shape=diamond, label="Sort by\nkey ?", style=filled, fillcolor=orange];
     
     {rank = same; ncs; vector;}
-    ncs[shape=diamond, label="Contiguous\nstorage ?", style=filled, fillcolor=yellow];
+    ncs[shape=diamond, label="Contiguous\nstorage ?", style=filled, fillcolor=orange];
     
     {rank = same; fbk; sv; sc}
-    sv[shape=diamond, label="Size\nvarie ?", style=filled, fillcolor=yellow];
-    sc[shape=diamond, label="Size is\nconst ?", style=filled, fillcolor=yellow];
+    sv[shape=diamond, label="Size\nvarie ?", style=filled, fillcolor=orange];
+    sc[shape=diamond, label="Size is\nconst ?", style=filled, fillcolor=orange];
     
     {rank = same; ieim; deque;}
-    ieim[shape=diamond, label="Insert/erase\nin the middle ?", style=filled, fillcolor=yellow];
+    ieim[shape=diamond, label="Insert/erase\nin the middle ?", style=filled, fillcolor=orange];
     
-    ad1[shape=diamond, label="Allow\nduplicate ?", style=filled, fillcolor=yellow];
-    ad2[shape=diamond, label="Allow\nduplicate ?", style=filled, fillcolor=yellow];
-    skv11[shape=diamond, label="Separate\nkey/value ?", style=filled, fillcolor=yellow];
-    skv12[shape=diamond, label="Separate\nkey/value ?", style=filled, fillcolor=yellow];
-    skv21[shape=diamond, label="Separate\nkey/value ?", style=filled, fillcolor=yellow];
-    skv22[shape=diamond, label="Separate\nkey/value ?", style=filled, fillcolor=yellow];
+    ad1[shape=diamond, label="Allow\nduplicate ?", style=filled, fillcolor=orange];
+    ad2[shape=diamond, label="Allow\nduplicate ?", style=filled, fillcolor=orange];
+    skv11[shape=diamond, label="Separate\nkey/value ?", style=filled, fillcolor=orange];
+    skv12[shape=diamond, label="Separate\nkey/value ?", style=filled, fillcolor=orange];
+    skv21[shape=diamond, label="Separate\nkey/value ?", style=filled, fillcolor=orange];
+    skv22[shape=diamond, label="Separate\nkey/value ?", style=filled, fillcolor=orange];
     
     ad1 -> skv11[label="yes"];
     ad1 -> skv12[label="no"];
@@ -42,19 +42,19 @@ digraph G {
     skv22 -> unordered_map[label="yes"];
     skv22 -> unordered_set[label="no"];
     
-    vector[shape=box, style=filled, fillcolor=blue];
-    array[shape=box, style=filled, fillcolor=blue];
-    list[shape=box, style=filled, fillcolor=blue];
-    deque[shape=box, style=filled, fillcolor=blue];
-    span[shape=box, style=filled, fillcolor=blue];
-    map[shape=box, style=filled, fillcolor=blue];
-    set[shape=box, style=filled, fillcolor=blue];
-    multimap[shape=box, style=filled, fillcolor=blue];
-    multiset[shape=box, style=filled, fillcolor=blue];
-    unordered_map[shape=box, style=filled, fillcolor=blue];
-    unordered_set[shape=box, style=filled, fillcolor=blue];
-    unordered_multimap[shape=box, style=filled, fillcolor=blue];
-    unordered_multiset[shape=box, style=filled, fillcolor=blue];
+    vector[shape=box, style=filled, fillcolor=lightskyblue];
+    array[shape=box, style=filled, fillcolor=lightskyblue];
+    list[shape=box, style=filled, fillcolor=lightskyblue];
+    deque[shape=box, style=filled, fillcolor=lightskyblue];
+    span[shape=box, style=filled, fillcolor=lightskyblue];
+    map[shape=box, style=filled, fillcolor=lightskyblue];
+    set[shape=box, style=filled, fillcolor=lightskyblue];
+    multimap[shape=box, style=filled, fillcolor=lightskyblue];
+    multiset[shape=box, style=filled, fillcolor=lightskyblue];
+    unordered_map[shape=box, style=filled, fillcolor=lightskyblue];
+    unordered_set[shape=box, style=filled, fillcolor=lightskyblue];
+    unordered_multimap[shape=box, style=filled, fillcolor=lightskyblue];
+    unordered_multiset[shape=box, style=filled, fillcolor=lightskyblue];
     
     start -> pea;
     
