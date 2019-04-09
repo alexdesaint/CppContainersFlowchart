@@ -12,13 +12,13 @@
 <!-- start -->
 <g id="node1" class="node">
 <title>start</title>
-<path fill="none" stroke="#000000" d="M384,-998C384,-998 354,-998 354,-998 348,-998 342,-992 342,-986 342,-986 342,-974 342,-974 342,-968 348,-962 354,-962 354,-962 384,-962 384,-962 390,-962 396,-968 396,-974 396,-974 396,-986 396,-986 396,-992 390,-998 384,-998"/>
+<polygon fill="#c0c0c0" stroke="#000000" points="396,-998 342,-998 342,-962 396,-962 396,-998"/>
 <text text-anchor="middle" x="369" y="-976.3" font-family="Times,serif" font-size="14.00" fill="#000000">start</text>
 </g>
 <!-- pea -->
 <g id="node2" class="node">
 <title>pea</title>
-<polygon fill="none" stroke="#000000" points="369,-925 268,-887 369,-849 470,-887 369,-925"/>
+<polygon fill="#ffff00" stroke="#000000" points="369,-925 268,-887 369,-849 470,-887 369,-925"/>
 <text text-anchor="middle" x="369" y="-890.8" font-family="Times,serif" font-size="14.00" fill="#000000">Point</text>
 <text text-anchor="middle" x="369" y="-875.8" font-family="Times,serif" font-size="14.00" fill="#000000">existing array ?</text>
 </g>
@@ -31,7 +31,7 @@
 <!-- span -->
 <g id="node3" class="node">
 <title>span</title>
-<polygon fill="none" stroke="#000000" points="561,-905 507,-905 507,-869 561,-869 561,-905"/>
+<polygon fill="#0000ff" stroke="#000000" points="561,-905 507,-905 507,-869 561,-869 561,-905"/>
 <text text-anchor="middle" x="534" y="-883.3" font-family="Times,serif" font-size="14.00" fill="#000000">span</text>
 </g>
 <!-- pea&#45;&gt;span -->
@@ -44,7 +44,7 @@
 <!-- fbk -->
 <g id="node5" class="node">
 <title>fbk</title>
-<polygon fill="none" stroke="#000000" points="369,-798 310,-760 369,-722 428,-760 369,-798"/>
+<polygon fill="#ffff00" stroke="#000000" points="369,-798 310,-760 369,-722 428,-760 369,-798"/>
 <text text-anchor="middle" x="369" y="-763.8" font-family="Times,serif" font-size="14.00" fill="#000000">Find by</text>
 <text text-anchor="middle" x="369" y="-748.8" font-family="Times,serif" font-size="14.00" fill="#000000">key ?</text>
 </g>
@@ -58,13 +58,13 @@
 <!-- array -->
 <g id="node4" class="node">
 <title>array</title>
-<polygon fill="none" stroke="#000000" points="688,-905 634,-905 634,-869 688,-869 688,-905"/>
+<polygon fill="#0000ff" stroke="#000000" points="688,-905 634,-905 634,-869 688,-869 688,-905"/>
 <text text-anchor="middle" x="661" y="-883.3" font-family="Times,serif" font-size="14.00" fill="#000000">array</text>
 </g>
 <!-- sbk -->
 <g id="node6" class="node">
 <title>sbk</title>
-<polygon fill="none" stroke="#000000" points="369,-417 313,-379 369,-341 425,-379 369,-417"/>
+<polygon fill="#ffff00" stroke="#000000" points="369,-417 313,-379 369,-341 425,-379 369,-417"/>
 <text text-anchor="middle" x="369" y="-382.8" font-family="Times,serif" font-size="14.00" fill="#000000">Sort by</text>
 <text text-anchor="middle" x="369" y="-367.8" font-family="Times,serif" font-size="14.00" fill="#000000">key ?</text>
 </g>
@@ -78,7 +78,7 @@
 <!-- sv -->
 <g id="node10" class="node">
 <title>sv</title>
-<polygon fill="none" stroke="#000000" points="517,-798 464,-760 517,-722 570,-760 517,-798"/>
+<polygon fill="#ffff00" stroke="#000000" points="517,-798 464,-760 517,-722 570,-760 517,-798"/>
 <text text-anchor="middle" x="517" y="-763.8" font-family="Times,serif" font-size="14.00" fill="#000000">Size</text>
 <text text-anchor="middle" x="517" y="-748.8" font-family="Times,serif" font-size="14.00" fill="#000000">varie ?</text>
 </g>
@@ -92,7 +92,7 @@
 <!-- ad1 -->
 <g id="node14" class="node">
 <title>ad1</title>
-<polygon fill="none" stroke="#000000" points="281,-290 205,-252 281,-214 357,-252 281,-290"/>
+<polygon fill="#ffff00" stroke="#000000" points="281,-290 205,-252 281,-214 357,-252 281,-290"/>
 <text text-anchor="middle" x="281" y="-255.8" font-family="Times,serif" font-size="14.00" fill="#000000">Allow</text>
 <text text-anchor="middle" x="281" y="-240.8" font-family="Times,serif" font-size="14.00" fill="#000000">duplicate ?</text>
 </g>
@@ -106,7 +106,7 @@
 <!-- ad2 -->
 <g id="node15" class="node">
 <title>ad2</title>
-<polygon fill="none" stroke="#000000" points="474,-290 398,-252 474,-214 550,-252 474,-290"/>
+<polygon fill="#ffff00" stroke="#000000" points="474,-290 398,-252 474,-214 550,-252 474,-290"/>
 <text text-anchor="middle" x="474" y="-255.8" font-family="Times,serif" font-size="14.00" fill="#000000">Allow</text>
 <text text-anchor="middle" x="474" y="-240.8" font-family="Times,serif" font-size="14.00" fill="#000000">duplicate ?</text>
 </g>
@@ -120,20 +120,20 @@
 <!-- list -->
 <g id="node7" class="node">
 <title>list</title>
-<polygon fill="none" stroke="#000000" points="544,-397 490,-397 490,-361 544,-361 544,-397"/>
+<polygon fill="#0000ff" stroke="#000000" points="544,-397 490,-397 490,-361 544,-361 544,-397"/>
 <text text-anchor="middle" x="517" y="-375.3" font-family="Times,serif" font-size="14.00" fill="#000000">list</text>
 </g>
 <!-- ncs -->
 <g id="node8" class="node">
 <title>ncs</title>
-<polygon fill="none" stroke="#000000" points="517,-671 438,-633 517,-595 596,-633 517,-671"/>
+<polygon fill="#ffff00" stroke="#000000" points="517,-671 438,-633 517,-595 596,-633 517,-671"/>
 <text text-anchor="middle" x="517" y="-636.8" font-family="Times,serif" font-size="14.00" fill="#000000">Contiguous</text>
 <text text-anchor="middle" x="517" y="-621.8" font-family="Times,serif" font-size="14.00" fill="#000000">storage ?</text>
 </g>
 <!-- vector -->
 <g id="node9" class="node">
 <title>vector</title>
-<polygon fill="none" stroke="#000000" points="687,-651 633,-651 633,-615 687,-615 687,-651"/>
+<polygon fill="#0000ff" stroke="#000000" points="687,-651 633,-651 633,-615 687,-615 687,-651"/>
 <text text-anchor="middle" x="660" y="-629.3" font-family="Times,serif" font-size="14.00" fill="#000000">vector</text>
 </g>
 <!-- ncs&#45;&gt;vector -->
@@ -146,7 +146,7 @@
 <!-- ieim -->
 <g id="node12" class="node">
 <title>ieim</title>
-<polygon fill="none" stroke="#000000" points="517,-544 418,-506 517,-468 616,-506 517,-544"/>
+<polygon fill="#ffff00" stroke="#000000" points="517,-544 418,-506 517,-468 616,-506 517,-544"/>
 <text text-anchor="middle" x="517" y="-509.8" font-family="Times,serif" font-size="14.00" fill="#000000">Insert/erase</text>
 <text text-anchor="middle" x="517" y="-494.8" font-family="Times,serif" font-size="14.00" fill="#000000">in the middle ?</text>
 </g>
@@ -167,7 +167,7 @@
 <!-- sc -->
 <g id="node11" class="node">
 <title>sc</title>
-<polygon fill="none" stroke="#000000" points="661,-798 606,-760 661,-722 716,-760 661,-798"/>
+<polygon fill="#ffff00" stroke="#000000" points="661,-798 606,-760 661,-722 716,-760 661,-798"/>
 <text text-anchor="middle" x="661" y="-763.8" font-family="Times,serif" font-size="14.00" fill="#000000">Size is</text>
 <text text-anchor="middle" x="661" y="-748.8" font-family="Times,serif" font-size="14.00" fill="#000000">const ?</text>
 </g>
@@ -202,7 +202,7 @@
 <!-- deque -->
 <g id="node13" class="node">
 <title>deque</title>
-<polygon fill="none" stroke="#000000" points="706,-524 652,-524 652,-488 706,-488 706,-524"/>
+<polygon fill="#0000ff" stroke="#000000" points="706,-524 652,-524 652,-488 706,-488 706,-524"/>
 <text text-anchor="middle" x="679" y="-502.3" font-family="Times,serif" font-size="14.00" fill="#000000">deque</text>
 </g>
 <!-- ieim&#45;&gt;deque -->
@@ -215,7 +215,7 @@
 <!-- skv11 -->
 <g id="node16" class="node">
 <title>skv11</title>
-<polygon fill="none" stroke="#000000" points="105,-163 26,-125 105,-87 184,-125 105,-163"/>
+<polygon fill="#ffff00" stroke="#000000" points="105,-163 26,-125 105,-87 184,-125 105,-163"/>
 <text text-anchor="middle" x="105" y="-128.8" font-family="Times,serif" font-size="14.00" fill="#000000">Separate</text>
 <text text-anchor="middle" x="105" y="-113.8" font-family="Times,serif" font-size="14.00" fill="#000000">key/value ?</text>
 </g>
@@ -229,7 +229,7 @@
 <!-- skv12 -->
 <g id="node17" class="node">
 <title>skv12</title>
-<polygon fill="none" stroke="#000000" points="281,-163 202,-125 281,-87 360,-125 281,-163"/>
+<polygon fill="#ffff00" stroke="#000000" points="281,-163 202,-125 281,-87 360,-125 281,-163"/>
 <text text-anchor="middle" x="281" y="-128.8" font-family="Times,serif" font-size="14.00" fill="#000000">Separate</text>
 <text text-anchor="middle" x="281" y="-113.8" font-family="Times,serif" font-size="14.00" fill="#000000">key/value ?</text>
 </g>
@@ -243,7 +243,7 @@
 <!-- skv21 -->
 <g id="node18" class="node">
 <title>skv21</title>
-<polygon fill="none" stroke="#000000" points="474,-163 395,-125 474,-87 553,-125 474,-163"/>
+<polygon fill="#ffff00" stroke="#000000" points="474,-163 395,-125 474,-87 553,-125 474,-163"/>
 <text text-anchor="middle" x="474" y="-128.8" font-family="Times,serif" font-size="14.00" fill="#000000">Separate</text>
 <text text-anchor="middle" x="474" y="-113.8" font-family="Times,serif" font-size="14.00" fill="#000000">key/value ?</text>
 </g>
@@ -257,7 +257,7 @@
 <!-- skv22 -->
 <g id="node19" class="node">
 <title>skv22</title>
-<polygon fill="none" stroke="#000000" points="667,-163 588,-125 667,-87 746,-125 667,-163"/>
+<polygon fill="#ffff00" stroke="#000000" points="667,-163 588,-125 667,-87 746,-125 667,-163"/>
 <text text-anchor="middle" x="667" y="-128.8" font-family="Times,serif" font-size="14.00" fill="#000000">Separate</text>
 <text text-anchor="middle" x="667" y="-113.8" font-family="Times,serif" font-size="14.00" fill="#000000">key/value ?</text>
 </g>
@@ -271,7 +271,7 @@
 <!-- multimap -->
 <g id="node20" class="node">
 <title>multimap</title>
-<polygon fill="none" stroke="#000000" points="70,-36 0,-36 0,0 70,0 70,-36"/>
+<polygon fill="#0000ff" stroke="#000000" points="70,-36 0,-36 0,0 70,0 70,-36"/>
 <text text-anchor="middle" x="35" y="-14.3" font-family="Times,serif" font-size="14.00" fill="#000000">multimap</text>
 </g>
 <!-- skv11&#45;&gt;multimap -->
@@ -284,7 +284,7 @@
 <!-- multiset -->
 <g id="node21" class="node">
 <title>multiset</title>
-<polygon fill="none" stroke="#000000" points="149.5,-36 88.5,-36 88.5,0 149.5,0 149.5,-36"/>
+<polygon fill="#0000ff" stroke="#000000" points="149.5,-36 88.5,-36 88.5,0 149.5,0 149.5,-36"/>
 <text text-anchor="middle" x="119" y="-14.3" font-family="Times,serif" font-size="14.00" fill="#000000">multiset</text>
 </g>
 <!-- skv11&#45;&gt;multiset -->
@@ -297,7 +297,7 @@
 <!-- map -->
 <g id="node22" class="node">
 <title>map</title>
-<polygon fill="none" stroke="#000000" points="236,-36 182,-36 182,0 236,0 236,-36"/>
+<polygon fill="#0000ff" stroke="#000000" points="236,-36 182,-36 182,0 236,0 236,-36"/>
 <text text-anchor="middle" x="209" y="-14.3" font-family="Times,serif" font-size="14.00" fill="#000000">map</text>
 </g>
 <!-- skv12&#45;&gt;map -->
@@ -310,7 +310,7 @@
 <!-- set -->
 <g id="node23" class="node">
 <title>set</title>
-<polygon fill="none" stroke="#000000" points="308,-36 254,-36 254,0 308,0 308,-36"/>
+<polygon fill="#0000ff" stroke="#000000" points="308,-36 254,-36 254,0 308,0 308,-36"/>
 <text text-anchor="middle" x="281" y="-14.3" font-family="Times,serif" font-size="14.00" fill="#000000">set</text>
 </g>
 <!-- skv12&#45;&gt;set -->
@@ -323,7 +323,7 @@
 <!-- unordered_multimap -->
 <g id="node24" class="node">
 <title>unordered_multimap</title>
-<polygon fill="none" stroke="#000000" points="457.5,-36 326.5,-36 326.5,0 457.5,0 457.5,-36"/>
+<polygon fill="#0000ff" stroke="#000000" points="457.5,-36 326.5,-36 326.5,0 457.5,0 457.5,-36"/>
 <text text-anchor="middle" x="392" y="-14.3" font-family="Times,serif" font-size="14.00" fill="#000000">unordered_multimap</text>
 </g>
 <!-- skv21&#45;&gt;unordered_multimap -->
@@ -336,7 +336,7 @@
 <!-- unordered_multiset -->
 <g id="node25" class="node">
 <title>unordered_multiset</title>
-<polygon fill="none" stroke="#000000" points="598,-36 476,-36 476,0 598,0 598,-36"/>
+<polygon fill="#0000ff" stroke="#000000" points="598,-36 476,-36 476,0 598,0 598,-36"/>
 <text text-anchor="middle" x="537" y="-14.3" font-family="Times,serif" font-size="14.00" fill="#000000">unordered_multiset</text>
 </g>
 <!-- skv21&#45;&gt;unordered_multiset -->
@@ -349,7 +349,7 @@
 <!-- unordered_map -->
 <g id="node26" class="node">
 <title>unordered_map</title>
-<polygon fill="none" stroke="#000000" points="718,-36 616,-36 616,0 718,0 718,-36"/>
+<polygon fill="#0000ff" stroke="#000000" points="718,-36 616,-36 616,0 718,0 718,-36"/>
 <text text-anchor="middle" x="667" y="-14.3" font-family="Times,serif" font-size="14.00" fill="#000000">unordered_map</text>
 </g>
 <!-- skv22&#45;&gt;unordered_map -->
@@ -362,7 +362,7 @@
 <!-- unordered_set -->
 <g id="node27" class="node">
 <title>unordered_set</title>
-<polygon fill="none" stroke="#000000" points="829.5,-36 736.5,-36 736.5,0 829.5,0 829.5,-36"/>
+<polygon fill="#0000ff" stroke="#000000" points="829.5,-36 736.5,-36 736.5,0 829.5,0 829.5,-36"/>
 <text text-anchor="middle" x="783" y="-14.3" font-family="Times,serif" font-size="14.00" fill="#000000">unordered_set</text>
 </g>
 <!-- skv22&#45;&gt;unordered_set -->
