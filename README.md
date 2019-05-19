@@ -2,7 +2,7 @@
 
 ## Choose the right c++ container
 
-### Containers with no keys (search is slow) :
+### Sequence Containers (search is slow) :
 |  Container   | Continious data | Persitent position   | Iterator type | Insertion     | Notes |
 |--------------|-----------------|----------------------|---------------|---------------|-------|
 | `array`      | yes             | yes                  | Random access | Not possible  | Size must be tamplate |
@@ -10,7 +10,7 @@
 | `deque`      | no              | No (lost on resize)  | Random access | Start and end | Need copy construcor on resize |
 | `list`       | no              | yes                  | Bidirectional | Everywere     | No random access |
 
-### Container with keys (no continus data, persitent position and iterator) :
+### Associative Containers (no continus data, persitent position and iterator) :
 | Container            | Ordered | Allow dublicate | Separate key/value | Iterator type | Notes |
 |----------------------|---------|-----------------|--------------------|---------------|--|
 | `map`                | yes     | no              | yes                | Bidirectional |  |
