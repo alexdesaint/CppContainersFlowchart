@@ -2,6 +2,10 @@
 
 ## Choose the right STL container
 
+### Flowchart
+
+![CppContainersFlowchart](flowchart.svg)
+
 ### Sequence Containers :
 - Search is slow
 
@@ -38,13 +42,13 @@
 | `unordered_multimap`  | yes             | yes                | Forward       |
 | `unordered_multiset`  | yes             | no                 | Forward       |
 
-### Flowchart
-
-![CppContainersFlowchart](flowchart.svg)
-
 ### TODO
 - add cpp version for each container
 - add constructor guide (copy, move, deleted, default)
 - add template guide
 - add cout format guide
 - add data type + range guide
+
+### Inspired by 
+- https://www.hackerearth.com/practice/notes/c-stls-when-to-use-which-stl/
+- https://stackoverflow.com/questions/471432/in-which-scenario-do-i-use-a-particular-stl-container
