@@ -7,14 +7,14 @@
 
 |  Container   | Continious data | Persitent position   | Iterator type | Insertion     | Notes |
 |--------------|-----------------|----------------------|---------------|---------------|-------|
-| `array`      | yes             | yes                  | Random access | Not possible  | Size must be tamplate |
+| `array`      | yes             | yes                  | Random access | Not possible  | Size must be tamplate compatible |
 | `vector`     | yes             | No (lost on reserve) | Random access | End (slow)    | Need copy construcor on reserve |
 | `deque`      | no              | No (lost on resize)  | Random access | Start and end | Need copy construcor on resize |
 | `list`       | no              | yes                  | Bidirectional | Everywere     | No random access |
 
 ### Associative Containers :
 - Ordered
-- Good search performance
+- Fast search
 - Persitent reference and iterator
 - Not continus in memory
 
@@ -26,7 +26,7 @@
 | `multiset`            | yes             | no                 | Bidirectional |
 
 ### Unordered Associative Containers :
-- Best search performance
+- Really fast search
 - Persitent reference and iterator until rehashing
 - Not continus in memory
 
