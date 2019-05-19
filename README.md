@@ -1,8 +1,10 @@
 # C++ memo
 
-## Choose the right c++ container
+## Choose the right STL container
 
-### Sequence Containers (search is slow) :
+### Sequence Containers :
+- Search is slow
+
 |  Container   | Continious data | Persitent position   | Iterator type | Insertion     | Notes |
 |--------------|-----------------|----------------------|---------------|---------------|-------|
 | `array`      | yes             | yes                  | Random access | Not possible  | Size must be tamplate |
@@ -10,24 +12,37 @@
 | `deque`      | no              | No (lost on resize)  | Random access | Start and end | Need copy construcor on resize |
 | `list`       | no              | yes                  | Bidirectional | Everywere     | No random access |
 
-### Associative Containers (no continus data, persitent position and iterator) :
-| Container            | Ordered | Allow dublicate | Separate key/value | Iterator type | Notes |
-|----------------------|---------|-----------------|--------------------|---------------|--|
-| `map`                | yes     | no              | yes                | Bidirectional |  |
-| `set`                | yes     | no              | no                 | Bidirectional |  |
-| `multimap`           | yes     | yes             | yes                | Bidirectional |  |
-| `multiset`           | yes     | yes             | no                 | Bidirectional |  |
-| `unordered_map`      | no      | no              | yes                | Forward       | Really fast search |
-| `unordered_set`      | no      | no              | no                 | Forward       | Really fast search |
-| `unordered_multimap` | no      | yes             | yes                | Forward       | Really fast search |
-| `unordered_multiset` | no      | yes             | no                 | Forward       | Really fast search |
+### Associative Containers :
+- Ordered
+- Good search performance
+- Persitent reference and iterator
+- Not continus in memory
+
+| Container             | Allow dublicate | Separate key/value | Iterator type |
+|-----------------------|-----------------|--------------------|---------------|
+| `map`                 | no              | yes                | Bidirectional |
+| `set`                 | no              | no                 | Bidirectional |
+| `multimap`            | yes             | yes                | Bidirectional |
+| `multiset`            | yes             | no                 | Bidirectional |
+
+### Unordered Associative Containers :
+- Best search performance
+- Persitent reference and iterator until rehashing
+- Not continus in memory
+
+
+| Container             | Allow dublicate | Separate key/value | Iterator type |
+|-----------------------|-----------------|--------------------|---------------|
+| `unordered_map`       | no              | yes                | Forward       |
+| `unordered_set`       | no              | no                 | Forward       |
+| `unordered_multimap`  | yes             | yes                | Forward       |
+| `unordered_multiset`  | yes             | no                 | Forward       |
 
 ### Flowchart
 
 ![CppContainersFlowchart](flowchart.svg)
 
 ### TODO
-- `std::vector` needs a copy constructor
 - add cpp version for each container
 - add constructor guide (copy, move, deleted, default)
 - add template guide
